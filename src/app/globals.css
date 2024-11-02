@@ -12,6 +12,11 @@
   display: none !important;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .bg-radial-gradient {
   background-image: radial-gradient(circle at 10% 20%,
       rgba(4, 159, 108, 1) 0%,
