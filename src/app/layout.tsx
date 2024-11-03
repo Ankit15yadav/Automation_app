@@ -8,7 +8,7 @@ const font = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Fuzzie",
+  title: "Buzzie",
   description: "Automate your work with Buzzie",
 };
 
