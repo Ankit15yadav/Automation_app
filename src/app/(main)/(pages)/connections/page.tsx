@@ -1,4 +1,6 @@
+import { CONNECTIONS } from '@/lib/constants'
 import React from 'react'
+import ConnectionCard from './_components/connection-card'
 
 type Props = {
     SearchParams?: { [key: string]: string | undefined }
@@ -14,6 +16,18 @@ const Connections = (props: Props) => {
             <div className=' relative flex flex-col gap-4'>
                 <section className='flex flex-col gap-4 p-6 text-muted-foreground'>
                     Connect all your apps directly from here. You may need to connect these apps regularly to refersh verification
+                    {
+                        CONNECTIONS.map((connection) => (
+                            <ConnectionCard
+                                key={connection.title}
+                                title={connection.title}
+                                description={connection.description}
+                                icon={connection.image}
+                            // type=
+                            // connected={connection.connected}
+                            />
+                        ))
+                    }
                 </section>
             </div>
         </div>
