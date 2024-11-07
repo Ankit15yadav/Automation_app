@@ -3,6 +3,7 @@ import React from 'react'
 import fuzzieLogo from "../../../public/fuzzieLogo.png"
 import Link from 'next/link'
 import { MenuIcon } from 'lucide-react'
+import { UserButton } from '@clerk/nextjs'
 
 type Props = {}
 

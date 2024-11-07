@@ -5,6 +5,7 @@ import Home from "@/components/icons/home"
 import Payment from "@/components/icons/payment"
 import Settings from "@/components/icons/settings"
 import Workflows from "@/components/icons/workflows"
+import { Connections } from "./types"
 
 
 export const clients = [...new Array(10)].map((client, index) => ({
@@ -147,7 +148,7 @@ export const EditorCanvasDefaultCardTypes = {
     },
 }
 
-export const CONNECTIONS = [
+export const CONNECTIONS: Connections[] = [
     {
         title: 'Google Drive',
         description: 'Connect your google drive to listen to folder changes',
