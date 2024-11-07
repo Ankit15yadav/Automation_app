@@ -52,8 +52,11 @@ export default function Home() {
         <LampComponent />
       </section>
 
-      <GithubContributions />
+      <div className=" w-full flex items-center justify-center flex-col gap-y-6">
+        <h1 className=" flex text-3xl font-semibold"> Days I Code </h1>
+        <GithubContributions />
 
+      </div>
     </main>
   );
 }
