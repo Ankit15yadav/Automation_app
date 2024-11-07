@@ -1,5 +1,9 @@
 import { HeroParallax } from "@/components/global/connect-parallax";
 import { ContainerScroll } from "@/components/global/container-scroll-animation";
+import GithubContributions from "@/components/global/githubContributions";
+import GitHubContributionGraph from "@/components/global/githubContributions";
+// import GitHubContributionGraph from "@/components/global/githubContributions";
+// import GitHubContributions from "@/components/global/githubContributions";
 import { InfiniteMovingCards } from "@/components/global/Infinite-moving-cards";
 import { LampComponent } from "@/components/global/lamp";
 import Navbar from "@/components/global/Navbar";
@@ -7,10 +11,15 @@ import { Button } from "@/components/ui/button";
 import { clients, products } from "@/lib/constants";
 import Image from "next/image";
 
+// import { drawContributions } from "github-contributions-canvas";
+
 export default function Home() {
+
   return (
     <main className=" flex items-center justify-center flex-col">
       <Navbar />
+      {/* <GitHubContributionGraph githubUsername="Ankit15yadav" /> */}
+
       <section className="h-screen w-full  bg-neutral-950 rounded-md  !overflow-visible relative flex flex-col items-center  antialiased mb-20">
         <div className="absolute inset-0  h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_35%,#223_100%)]"></div>
         <div className="flex flex-col mt-[-100px] md:mt-[-50px]">
@@ -42,6 +51,9 @@ export default function Home() {
       <section className=" mt-[-500px]">
         <LampComponent />
       </section>
+
+      <GithubContributions />
+
     </main>
   );
 }
